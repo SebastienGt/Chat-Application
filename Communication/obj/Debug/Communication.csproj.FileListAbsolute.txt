@@ -1,0 +1,8 @@
+D:\Cours\Efrei\C#\ProjectForm\Communication\bin\Debug\Communication.exe.config
+D:\Cours\Efrei\C#\ProjectForm\Communication\bin\Debug\Communication.exe
+D:\Cours\Efrei\C#\ProjectForm\Communication\bin\Debug\Communication.pdb
+D:\Cours\Efrei\C#\ProjectForm\Communication\obj\Debug\Communication.Properties.Resources.resources
+D:\Cours\Efrei\C#\ProjectForm\Communication\obj\Debug\Communication.csproj.GenerateResource.cache
+D:\Cours\Efrei\C#\ProjectForm\Communication\obj\Debug\Communication.csproj.CoreCompileInputs.cache
+D:\Cours\Efrei\C#\ProjectForm\Communication\obj\Debug\Communication.exe
+D:\Cours\Efrei\C#\ProjectForm\Communication\obj\Debug\Communication.pdb
