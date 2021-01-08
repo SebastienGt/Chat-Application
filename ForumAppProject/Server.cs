@@ -125,11 +125,10 @@ namespace ForumAppProject
                     else if (parts[0] == "register")
                     {
                         User user = new User(parts[1], parts[2], parts[3]);
-                        updateUI("New user " + username + " - registered");
+                        updateUI("New user : " + username + " registered");
                         usersInfo.Add(user);
                         Dat.Add("Succeed");
                     }
-                    updateUI(" /-------/ " + username + " , " + pass);
 
                     /* add to dictionary, listbox and send userList  */
                     clientList.Add(username, client);
@@ -399,6 +398,12 @@ namespace ForumAppProject
                 }
                 MessageBox.Show(k);
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            textBox1.SelectionStart = textBox1.TextLength;
+            textBox1.ScrollToCaret();
         }
     }
 }

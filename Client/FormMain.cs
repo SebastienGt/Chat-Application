@@ -256,11 +256,6 @@ namespace Client
             history.Clear();
         }
 
-        private void history_TextChanged(object sender, EventArgs e)
-        {
-            history.SelectionStart = history.TextLength;
-            history.ScrollToCaret();
-        }
         private void Create_Topic(string name)
         {
             chat.Add("cTopic");
@@ -370,6 +365,12 @@ namespace Client
             {
                 MessageBox.Show("You can't send private message to yourself !");
             }
+        }
+
+        private void history_TextChanged_1(object sender, EventArgs e)
+        {
+            history.SelectionStart = history.TextLength;
+            history.ScrollToCaret();
         }
     }
 }

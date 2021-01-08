@@ -31,6 +31,7 @@ namespace Client
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Connected", System.Windows.Forms.HorizontalAlignment.Center);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.listClients = new System.Windows.Forms.ListView();
             this.input = new System.Windows.Forms.TextBox();
             this.Send = new System.Windows.Forms.Button();
@@ -52,9 +53,9 @@ namespace Client
             this.listClients.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
             listViewGroup1});
             this.listClients.HideSelection = false;
-            this.listClients.Location = new System.Drawing.Point(493, 53);
+            this.listClients.Location = new System.Drawing.Point(464, 25);
             this.listClients.Name = "listClients";
-            this.listClients.Size = new System.Drawing.Size(121, 253);
+            this.listClients.Size = new System.Drawing.Size(121, 283);
             this.listClients.TabIndex = 0;
             this.listClients.UseCompatibleStateImageBehavior = false;
             this.listClients.View = System.Windows.Forms.View.SmallIcon;
@@ -82,8 +83,10 @@ namespace Client
             this.history.Location = new System.Drawing.Point(23, 26);
             this.history.Multiline = true;
             this.history.Name = "history";
+            this.history.ReadOnly = true;
             this.history.Size = new System.Drawing.Size(278, 232);
             this.history.TabIndex = 4;
+            this.history.TextChanged += new System.EventHandler(this.history_TextChanged_1);
             // 
             // indicator
             // 
@@ -113,7 +116,7 @@ namespace Client
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(500, 37);
+            this.label2.Location = new System.Drawing.Point(471, 8);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 13);
             this.label2.TabIndex = 8;
@@ -141,7 +144,7 @@ namespace Client
             this.AcceptButton = this.Send;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(643, 331);
+            this.ClientSize = new System.Drawing.Size(638, 331);
             this.Controls.Add(this.buttonAddTopic);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -151,6 +154,8 @@ namespace Client
             this.Controls.Add(this.Send);
             this.Controls.Add(this.input);
             this.Controls.Add(this.listClients);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMain";
             this.Text = "EFREI PARIS - Forum";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formMain_FormClosing);

@@ -19,7 +19,6 @@ namespace Client
         TcpClient clientSocket = new TcpClient();
         List<string> users = new List<string>();
 
-        Thread ctThread;
         NetworkStream serverStream = default(NetworkStream);
         List<string> chat = new List<string>();
         Method methods = new Method();
@@ -64,7 +63,6 @@ namespace Client
                     chat.Clear();
                     this.Invoke((MethodInvoker)delegate // To Write the Received data
                     {
-                        //history.Text = history.Text + Environment.NewLine + "Me : " + input.Text;
                         input.Text = "";
                     });
                 }
@@ -82,19 +80,10 @@ namespace Client
             });
         }
 
-        /*private void formMain_FormClosing(object sender, FormClosingEventArgs e)
+        private void history_TextChanged(object sender, EventArgs e)
         {
-            try
-            {
-                //link.ctThread.Abort();
-                link.clientSocket.Close();
-            }
-            catch (Exception ee)
-            {
-                MessageBox.Show("Ferme" + ee);
-            }
-
-            Application.ExitThread();
-        }*/
+            history.SelectionStart = history.TextLength;
+            history.ScrollToCaret();
+        }
     }
 }

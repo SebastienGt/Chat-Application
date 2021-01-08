@@ -29,6 +29,7 @@ namespace Client
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegister));
             this.Create = new System.Windows.Forms.Button();
             this.username = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -36,12 +37,13 @@ namespace Client
             this.PeudoBox = new System.Windows.Forms.TextBox();
             this.MailBox = new System.Windows.Forms.TextBox();
             this.PassBox = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Create
             // 
             this.Create.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.Create.Location = new System.Drawing.Point(117, 329);
+            this.Create.Location = new System.Drawing.Point(125, 300);
             this.Create.Name = "Create";
             this.Create.Size = new System.Drawing.Size(75, 23);
             this.Create.TabIndex = 4;
@@ -99,12 +101,25 @@ namespace Client
             this.PassBox.TabIndex = 10;
             this.PassBox.TextChanged += new System.EventHandler(this.PassBox_TextChanged);
             // 
+            // button1
+            // 
+            this.button1.CausesValidation = false;
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.No;
+            this.button1.Location = new System.Drawing.Point(107, 392);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "About us";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormRegister
             // 
             this.AcceptButton = this.Create;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(314, 435);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.PassBox);
             this.Controls.Add(this.MailBox);
             this.Controls.Add(this.PeudoBox);
@@ -112,6 +127,8 @@ namespace Client
             this.Controls.Add(this.label2);
             this.Controls.Add(this.username);
             this.Controls.Add(this.Create);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(112, 85);
             this.Name = "FormRegister";
             this.Padding = new System.Windows.Forms.Padding(3);
@@ -130,5 +147,6 @@ namespace Client
         private System.Windows.Forms.TextBox PeudoBox;
         private System.Windows.Forms.TextBox MailBox;
         private System.Windows.Forms.TextBox PassBox;
+        private System.Windows.Forms.Button button1;
     }
 }

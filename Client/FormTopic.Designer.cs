@@ -29,6 +29,7 @@ namespace Client
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTopic));
             this.label1 = new System.Windows.Forms.Label();
             this.history = new System.Windows.Forms.TextBox();
             this.Send = new System.Windows.Forms.Button();
@@ -49,8 +50,10 @@ namespace Client
             this.history.Location = new System.Drawing.Point(12, 40);
             this.history.Multiline = true;
             this.history.Name = "history";
+            this.history.ReadOnly = true;
             this.history.Size = new System.Drawing.Size(483, 223);
             this.history.TabIndex = 14;
+            this.history.TextChanged += new System.EventHandler(this.history_TextChanged);
             // 
             // Send
             // 
@@ -79,6 +82,7 @@ namespace Client
             this.Controls.Add(this.history);
             this.Controls.Add(this.Send);
             this.Controls.Add(this.input);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormTopic";
             this.Text = "FormTopic";
             this.ResumeLayout(false);

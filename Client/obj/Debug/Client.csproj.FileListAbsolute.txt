@@ -17,3 +17,4 @@ D:\Cours\Efrei\C#\ProjectForm\Client\obj\Debug\Client.csproj.CoreCompileInputs.c
 D:\Cours\Efrei\C#\ProjectForm\Client\obj\Debug\Client.csproj.CopyComplete
 D:\Cours\Efrei\C#\ProjectForm\Client\obj\Debug\Client.exe
 D:\Cours\Efrei\C#\ProjectForm\Client\obj\Debug\Client.pdb
+D:\Cours\Efrei\C#\ProjectForm\Client\obj\Debug\Client.FormAbout.resources

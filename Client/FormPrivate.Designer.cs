@@ -29,6 +29,7 @@ namespace Client
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrivate));
             this.history = new System.Windows.Forms.TextBox();
             this.Send = new System.Windows.Forms.Button();
             this.input = new System.Windows.Forms.TextBox();
@@ -41,8 +42,10 @@ namespace Client
             this.history.Location = new System.Drawing.Point(12, 46);
             this.history.Multiline = true;
             this.history.Name = "history";
+            this.history.ReadOnly = true;
             this.history.Size = new System.Drawing.Size(278, 232);
             this.history.TabIndex = 10;
+            this.history.TextChanged += new System.EventHandler(this.history_TextChanged_1);
             // 
             // Send
             // 
@@ -88,6 +91,8 @@ namespace Client
             this.Controls.Add(this.history);
             this.Controls.Add(this.Send);
             this.Controls.Add(this.input);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormPrivate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormPrivate";

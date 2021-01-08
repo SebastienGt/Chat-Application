@@ -43,5 +43,20 @@ namespace Client
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormAbout testDialog = new FormAbout();
+
+            // Show testDialog as a modal dialog and determine if DialogResult = OK.
+            if (testDialog.ShowDialog(this) == DialogResult.OK)
+            {
+            }
+            else
+            {
+
+            }
+            testDialog.Dispose();
+        }
     }
 }

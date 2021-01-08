@@ -20,7 +20,7 @@ namespace Client
     {
         TcpClient clientSocket = new TcpClient();
         String friend, myName;
-        Thread ctThread;
+        //Thread ctThread;
         NetworkStream serverStream = default(NetworkStream);
         List<string> chat = new List<string>();
         Method methods = new Method();
@@ -129,6 +129,12 @@ namespace Client
             });
         }
         private void history_TextChanged(object sender, EventArgs e)
+        {
+            history.SelectionStart = history.TextLength;
+            history.ScrollToCaret();
+        }
+
+        private void history_TextChanged_1(object sender, EventArgs e)
         {
             history.SelectionStart = history.TextLength;
             history.ScrollToCaret();
