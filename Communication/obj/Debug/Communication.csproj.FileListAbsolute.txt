@@ -6,4 +6,3 @@ D:\Cours\Efrei\C#\ProjectForm\Communication\obj\Debug\Communication.csproj.Gener
 D:\Cours\Efrei\C#\ProjectForm\Communication\obj\Debug\Communication.csproj.CoreCompileInputs.cache
 D:\Cours\Efrei\C#\ProjectForm\Communication\obj\Debug\Communication.exe
 D:\Cours\Efrei\C#\ProjectForm\Communication\obj\Debug\Communication.pdb
-D:\Cours\Efrei\C#\ProjectForm\Communication\obj\Debug\Communication.csprojAssemblyReference.cache

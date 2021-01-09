@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Client.Program">
+    <Position X="0.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Client.Link">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAABCQAAAABAAABAAAAAAAAAIAABAAEA=</HashCode>
+      <FileName>Link.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Client.FormTopic">
+    <Position X="12.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAIAACAACAAABAAQECAABACAEAEABAgAAAIQAAAAiA=</HashCode>
+      <FileName>FormTopic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Client.FormMain">
+    <Position X="6" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIARACAAAGAAABBICECEEAACABgEABAAAEQIQAAwEmA=</HashCode>
+      <FileName>FormMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Client.FormEnterTopic">
+    <Position X="7.75" Y="1" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAACAAgBAAAACAAAASAAQAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>FormEnterTopic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Client.FormLogin">
+    <Position X="2.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAgAAACAAgBEAQACAAIESAAABAAAAEAAAAABgAEE=</HashCode>
+      <FileName>FormLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Client.FormRegister">
+    <Position X="4.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAEAAAKAAABABAACAAAECAAEIAEAEEEAAAAAAAgA=</HashCode>
+      <FileName>FormRegister.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Client.FormAbout">
+    <Position X="7.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAASAAAACAAAoAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormAbout.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Client.FormPrivate">
+    <Position X="10.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAACAACAAABAAQECAABACAAAAABAAAAAIQAgQAmA=</HashCode>
+      <FileName>FormPrivate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -57,9 +57,8 @@ namespace Client
             }
             catch (Exception e)
             {
-                //MessageBox.Show("GetMessageLogin " + e);
+                //MessageBox.Show("" + e);
                 //link.ctThread.Abort();
-                //Console.WriteLine(e);
             }
         }
 

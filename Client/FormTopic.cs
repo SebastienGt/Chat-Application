@@ -18,7 +18,6 @@ namespace Client
     {
         TcpClient clientSocket = new TcpClient();
         List<string> users = new List<string>();
-
         NetworkStream serverStream = default(NetworkStream);
         List<string> chat = new List<string>();
         Method methods = new Method();

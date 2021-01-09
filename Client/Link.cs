@@ -20,10 +20,8 @@ namespace Client
         public TcpClient clientSocket;
         public NetworkStream serverStream = default(NetworkStream);
         public string readData = null;
-
         public Thread ctThread;
         public Method Methods = new Method();
-
         List<string> chat = new List<string>();
 
         public void Connecting(string name, string pass)
