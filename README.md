@@ -1,6 +1,8 @@
 # Chat-Application
 The project is made for the semester 7 at EFREI PARIS in the course of C#, it is a chat application in TCP that let peoples talk in the different channel and topic.
 
+Final Grade of the project : 19.5 / 20.
+
 
 
 ![alt text](https://sdz-upload.s3.amazonaws.com/prod/upload/Suivi%20connexion%20d%C3%A9but.png)
